@@ -1,85 +1,88 @@
-.row {
-  align-items: baseline;
-  padding-right: 50px; }
+/* RESETEO*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+/* NAVEGACION O HEADER */
+.navegacion {
+  background-color: #003262;
+  border-bottom: #003262 solid; }
+  .navegacion .btn-primary {
+    border-radius: 50px;
+    color: black; }
+  .navegacion img {
+    width: 150px;
+    height: 150px; }
+
+/* BODY */
+h1 {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .carousel {
   width: 1000px;
   margin: auto; }
-
-.carousel-item img {
-  height: 500px;
-  width: 1000px; }
-
-img {
-  width: 150px;
-  height: 150px; }
-
-.navegacion {
-  background-color: black;
-  border-bottom: black solid; }
-
-h1 {
-  color: black;
-  text-align: center; }
-
-.btn-primary {
-  border-radius: 50px;
-  color: black; }
+  .carousel .carousel-item img {
+    height: 500px;
+    width: 1000px; }
 
 .catalogo {
   display: grid;
   grid-template-columns: 3fr 3fr 3fr;
   align-items: center;
   justify-items: center; }
+  .catalogo div {
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 400px;
+    box-shadow: 3px 3px 3px 3px grey; }
+    .catalogo div img {
+      height: 300px;
+      width: 300px; }
+    .catalogo div h3 {
+      color: red; }
+    .catalogo div button {
+      display: flex;
+      border-radius: 10px; }
 
-.catalogo div {
-  border-radius: 30px;
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 450px;
-  width: 400px;
-  box-shadow: 3px 3px 3px 3px grey; }
-
-.catalogo div img {
-  height: 300px;
-  width: 300px; }
-
-.catalogo button {
-  display: flex;
-  border-radius: 10px; }
-
-h3 {
-  color: red; }
-
-.footer {
-  display: grid;
-  grid-template-columns: 3fr 3fr 3fr 3fr;
-  justify-items: center;
-  background-color: black;
-  color: white;
-  margin-top: 10px; }
+/* MARCAS QUE TRABAJAMOS */
+.container-fluid .row {
+  align-items: baseline;
+  padding-right: 50px; }
+  .container-fluid .row img {
+    width: 150px;
+    height: 150px; }
 
 /* SECCION CONTACTANOS */
 .contactanos {
   padding: 10px; }
+  .contactanos .btn-succes {
+    color: white;
+    background-color: green; }
+  .contactanos .btn-ig {
+    color: white;
+    background-color: blueviolet; }
+  .contactanos .btn-face {
+    color: white;
+    background-color: blue; }
+  .contactanos .texto_mail {
+    margin-top: 20px; }
 
-.btn-succes {
-  color: white;
-  background-color: green; }
-
-.btn-ig {
-  color: white;
-  background-color: blueviolet; }
-
-.btn-face {
-  color: white;
-  background-color: blue; }
-
-.texto_mail {
-  margin-top: 20px; }
+/* FOOTER */
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  justify-items: center;
+  background-color: #318CE7;
+  color: black;
+  margin-top: 10px; }
 
 /* RESPONSIVE */
 @media (max-width: 1360px) {
@@ -92,11 +95,6 @@ h3 {
   .carousel-item img {
     height: 500px;
     width: 800px; } }
-
-.footer {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: start;
-  padding: 20px; }
 
 @media (max-width: 820px) {
   .carousel-item img {

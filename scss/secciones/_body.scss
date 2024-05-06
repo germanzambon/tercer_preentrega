@@ -1,0 +1,94 @@
+/* BODY */
+h1 {
+    color:$letra_titulo;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel {
+    width: 1000px;
+    margin: auto;
+
+    .carousel-item img {
+        height: 500px;
+        width: 1000px;
+    }
+}
+
+
+
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    align-items: center;
+    justify-items: center;
+
+
+    div {
+
+        border-radius: 30px;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 450px;
+        width: 400px;
+        box-shadow: 3px 3px 3px 3px grey;
+
+        img {
+            height: 300px;
+            width: 300px;
+
+        }
+
+        h3 {
+            color: red;
+        }
+
+        button {
+            display: flex;
+            border-radius: 10px;
+        }
+    }
+}
+
+/* MARCAS QUE TRABAJAMOS */
+.container-fluid {
+
+    .row {
+        align-items: baseline;
+        padding-right: 50px;
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    
+}
+
+
+/* SECCION CONTACTANOS */
+.contactanos {
+    padding: 10px;
+
+    .btn-succes {
+        color: white;
+        background-color: green;
+    }
+
+    .btn-ig {
+        color: white;
+        background-color: blueviolet;
+    }
+
+    .btn-face {
+        color: white;
+        background-color: blue;
+    }
+
+    .texto_mail {
+        margin-top: 20px;
+    }
+}

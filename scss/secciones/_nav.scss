@@ -1,0 +1,17 @@
+/* NAVEGACION O HEADER */
+.navegacion {
+    background-color: $fondo_navegador;
+    border-bottom: $fondo_navegador solid;
+
+    .btn-primary {
+        border-radius: 50px;
+        color: black;
+
+    }
+    img {
+        width: 150px;
+        height: 150px;
+    
+    }
+}
+

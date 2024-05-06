@@ -1,0 +1,9 @@
+/* FOOTER */
+.footer {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    justify-items: center;
+    background-color: $fondo_footer;
+    color: black;
+    margin-top: 10px;
+}
