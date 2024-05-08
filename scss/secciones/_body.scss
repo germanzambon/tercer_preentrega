@@ -37,6 +37,7 @@ h1 {
         width: 400px;
         box-shadow: 3px 3px 3px 3px grey;
 
+
         img {
             height: 300px;
             width: 300px;
@@ -50,6 +51,9 @@ h1 {
         button {
             display: flex;
             border-radius: 10px;
+            background-color: blue;
+            color: white;
+            padding: 5px;
         }
     }
 }
@@ -61,8 +65,7 @@ h1 {
         align-items: baseline;
         padding-right: 50px;
         img {
-            width: 150px;
-            height: 150px;
+           @extend .tamaño_imagen;
         }
     }
     
@@ -74,21 +77,19 @@ h1 {
     padding: 10px;
 
     .btn-succes {
-        color: white;
-        background-color: green;
+        @include boton (green)
     }
 
     .btn-ig {
-        color: white;
-        background-color: blueviolet;
+        @include boton (purple)
     }
 
     .btn-face {
-        color: white;
-        background-color: blue;
+        @include boton (blue)
     }
 
     .texto_mail {
         margin-top: 20px;
     }
 }
+

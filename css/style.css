@@ -1,3 +1,11 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+/* EXTEND*/
+.tamaño_imagen, .navegacion img, .container-fluid .row img {
+  width: 150px;
+  height: 150px; }
+
+/* MIXIN*/
 /* RESETEO*/
 * {
   margin: 0px;
@@ -7,13 +15,11 @@
 /* NAVEGACION O HEADER */
 .navegacion {
   background-color: #003262;
-  border-bottom: #003262 solid; }
+  border-bottom: #003262 solid;
+  font-family: fuente_nav; }
   .navegacion .btn-primary {
     border-radius: 50px;
     color: black; }
-  .navegacion img {
-    width: 150px;
-    height: 150px; }
 
 /* BODY */
 h1 {
@@ -50,26 +56,29 @@ h1 {
       color: red; }
     .catalogo div button {
       display: flex;
-      border-radius: 10px; }
+      border-radius: 10px;
+      background-color: blue;
+      color: white;
+      padding: 5px; }
 
 /* MARCAS QUE TRABAJAMOS */
 .container-fluid .row {
   align-items: baseline;
   padding-right: 50px; }
-  .container-fluid .row img {
-    width: 150px;
-    height: 150px; }
 
 /* SECCION CONTACTANOS */
 .contactanos {
   padding: 10px; }
   .contactanos .btn-succes {
+    border: 2px black solid;
     color: white;
     background-color: green; }
   .contactanos .btn-ig {
+    border: 2px black solid;
     color: white;
-    background-color: blueviolet; }
+    background-color: purple; }
   .contactanos .btn-face {
+    border: 2px black solid;
     color: white;
     background-color: blue; }
   .contactanos .texto_mail {

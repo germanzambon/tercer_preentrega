@@ -1,0 +1,13 @@
+/* EXTEND*/
+.tamaño_imagen{
+    width: 150px;
+    height: 150px;
+}
+
+/* MIXIN*/
+@mixin boton ($color){
+    border: 2px black solid;
+    color: white;
+    background-color: $color;
+
+}

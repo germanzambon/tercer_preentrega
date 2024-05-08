@@ -2,6 +2,7 @@
 .navegacion {
     background-color: $fondo_navegador;
     border-bottom: $fondo_navegador solid;
+    font-family: fuente_nav;
 
     .btn-primary {
         border-radius: 50px;
@@ -9,9 +10,7 @@
 
     }
     img {
-        width: 150px;
-        height: 150px;
-    
+        @extend .tamaño_imagen;
     }
 }
 
