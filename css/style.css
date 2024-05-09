@@ -5,6 +5,15 @@
   width: 150px;
   height: 150px; }
 
+.gradiante_nav, .hover:hover, .contactanos .btn-succes:hover, .contactanos .btn-ig:hover, .contactanos .btn-face:hover, .navegacion, .catalogo div:hover {
+  background-image: linear-gradient(#0077b6, #00a5d0, #00add4, #24bfde, #90e0ef); }
+
+.gradiante_footer, .footer {
+  background-image: linear-gradient(to top, #0077b6, #00a5d0, #00add4, #24bfde, #90e0ef); }
+
+.hover:hover, .contactanos .btn-succes:hover, .contactanos .btn-ig:hover, .contactanos .btn-face:hover {
+  transform: scale(1.1); }
+
 /* MIXIN*/
 /* RESETEO*/
 * {
@@ -14,12 +23,15 @@
 
 /* NAVEGACION O HEADER */
 .navegacion {
-  background-color: #003262;
   border-bottom: #003262 solid;
   font-family: fuente_nav; }
   .navegacion .btn-primary {
     border-radius: 50px;
     color: black; }
+  .navegacion img {
+    transition: .3s ease-in-out; }
+    .navegacion img:hover {
+      transform: scale(1.1); }
 
 /* BODY */
 h1 {
@@ -48,7 +60,10 @@ h1 {
     align-items: center;
     height: 450px;
     width: 400px;
-    box-shadow: 3px 3px 3px 3px grey; }
+    box-shadow: 3px 3px 3px 3px grey;
+    transition: .3s ease-in-out; }
+    .catalogo div:hover {
+      transform: scale(1.1); }
     .catalogo div img {
       height: 300px;
       width: 300px; }
@@ -89,7 +104,6 @@ h1 {
   display: grid;
   grid-template-columns: 3fr 3fr 3fr 3fr;
   justify-items: center;
-  background-color: #318CE7;
   color: black;
   margin-top: 10px; }
 

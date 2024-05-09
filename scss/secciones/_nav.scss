@@ -1,6 +1,6 @@
 /* NAVEGACION O HEADER */
 .navegacion {
-    background-color: $fondo_navegador;
+     @extend .gradiante_nav;
     border-bottom: $fondo_navegador solid;
     font-family: fuente_nav;
 
@@ -11,6 +11,13 @@
     }
     img {
         @extend .tamaño_imagen;
+        transition: .3s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+            
+        }
     }
 }
+
+
 
